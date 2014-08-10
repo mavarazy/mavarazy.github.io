@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.reactivemongo" module="reactivemongo_2.11" revision="0.11.0-SNAPSHOT" status="integration" publication="20140810152821">
+		<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+		<description homepage="http://reactivemongo.org">
+		ReactiveMongo
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		
+	</configurations>
+	<publications>
+		<artifact name="reactivemongo_2.11" type="pom" ext="pom" conf="pom"/>
+		<artifact name="reactivemongo_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="reactivemongo_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="reactivemongo_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.1" conf="compile->default(compile)"/>
+		<dependency org="org.reactivemongo" name="reactivemongo-bson-macros_2.11" rev="0.11.0-SNAPSHOT" conf="compile->default(compile)"/>
+		<dependency org="io.netty" name="netty" rev="3.6.5.Final" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.11" rev="2.3.3" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-iteratees_2.11" rev="2.3.0" conf="compile->default(compile)"/>
+		<dependency org="org.specs2" name="specs2-core_2.11" rev="2.3.11" conf="test->default(compile)"/>
+		<dependency org="org.apache.logging.log4j" name="log4j-api" rev="2.0-beta9" conf="compile->default(compile)"/>
+		<dependency org="org.apache.logging.log4j" name="log4j-core" rev="2.0-beta9" conf="compile->default(compile)"/>
+	</dependencies>
+</ivy-module>

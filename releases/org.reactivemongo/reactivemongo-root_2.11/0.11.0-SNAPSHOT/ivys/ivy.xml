@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.reactivemongo" module="reactivemongo-root_2.11" revision="0.11.0-SNAPSHOT" status="integration" publication="20140810152820">
+		<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+		<description homepage="http://reactivemongo.org">
+		ReactiveMongo-Root
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.1" conf="compile->default(compile)"/>
+	</dependencies>
+</ivy-module>
