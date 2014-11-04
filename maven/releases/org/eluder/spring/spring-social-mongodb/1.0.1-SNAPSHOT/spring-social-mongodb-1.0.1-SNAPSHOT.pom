@@ -13,7 +13,7 @@
   
   <groupId>org.eluder.spring</groupId>
   <artifactId>spring-social-mongodb</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
   
   <name>spring-social-mongodb</name>
   <description>Spring Social connection repository for MongoDB.</description>

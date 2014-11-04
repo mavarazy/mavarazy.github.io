@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Nov 04 20:33:56 IST 2014
+spring-social-mongodb-1.0-SNAPSHOT.jar>=
+spring-social-mongodb-1.0-SNAPSHOT.pom>=
+spring-social-mongodb-1.0-SNAPSHOT.pom>oss-sonatype=
+spring-social-mongodb-1.0-SNAPSHOT.jar>oss-sonatype=
