@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="keen" module="keenclient-scala_2.11" revision="1.0.3" status="release" publication="20141126201328">
+		<description>
+		keenclient-scala
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		
+	</configurations>
+	<publications>
+		<artifact name="keenclient-scala_2.11" type="pom" ext="pom" conf="pom"/>
+		<artifact name="keenclient-scala_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="keenclient-scala_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="keenclient-scala_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.2" conf="compile->default(compile)"/>
+		<dependency org="org.scalaz.stream" name="scalaz-stream_2.11" rev="0.6" conf="compile->default(compile)"/>
+		<dependency org="io.spray" name="spray-can_2.11" rev="1.3.1" conf="compile->default(compile)"/>
+		<dependency org="io.spray" name="spray-http_2.11" rev="1.3.1" conf="compile->default(compile)"/>
+		<dependency org="io.spray" name="spray-httpx_2.11" rev="1.3.1" conf="compile->default(compile)"/>
+		<dependency org="io.spray" name="spray-util_2.11" rev="1.3.1" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.11" rev="2.3.7" conf="compile->default(compile)"/>
+		<dependency org="net.databinder.dispatch" name="dispatch-core_2.11" rev="0.11.2" conf="compile->default(compile)"/>
+		<dependency org="org.clapper" name="grizzled-slf4j_2.11" rev="1.0.2" conf="compile->default(compile)"/>
+		<dependency org="org.specs2" name="specs2_2.11" rev="2.4.13" conf="test->default(compile)"/>
+		<dependency org="org.slf4j" name="slf4j-simple" rev="1.7.6" conf="test->default(compile)"/>
+	</dependencies>
+</ivy-module>
